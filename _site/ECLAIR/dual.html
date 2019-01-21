@@ -1,0 +1,48 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<link rel="stylesheet" href="/assets/css/style.css?v=b6bb284a51e2cffa995bf34c410a3b02fb826945">
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<h1 id="Dual-0">Duality for linear problems</h1>
+<p>
+  Let's assume a problem is which we want to minimize the cost:
+  $$ \textrm{min}\: c^T x $$
+  where \(c^T \in \mathbb{R}^n \) is the cost vector and \(x\in \mathbb{R}^n\) are the unknowns  
+  with constraints:
+  $$ Ax\geq b \\
+     x \geq 0 $$
+  where \(A\) has dimension \(m\textrm(x)n\) and \(b\in \mathbb{R}^m\)
+  The dual problem is defined as:
+  $$ \textrm{max}\: b^Ty $$
+with constraints:
+$$ A^Ty\leq c \\
+     y \geq 0 $$
+  where \(y \in \mathbb{R}^m\) are the unknowns of the dual problem.
+</p>
+
+<h4 id="Dual-1">Theorem 1</h4>
+
+<p>
+For admitted x and admitted y:
+$$c^Tx \geq b^Ty $$
+because
+$$ c^T x \geq (A^T y)^Tx = y^TAx \geq y^Tb$$
+</p>
+<h4 id="Dual-2">Theorem 2</h4>
+<p>
+For optimal \(x^*\) and optimal \(y^*\):
+$$c^Tx^* = b^Ty^*$$
+and if \((Ax^*)_i > b_i\) then \(y^*_i = 0\)
+and if  \((A^Ty^*)_i < c_i\) then \(x^*_i = 0\)
+</p>
+
+<h3 id="Dual-3">Shadow costs</h3>
+Let's suppose that we have a minimization linear problem with constraints as described preciously with an optimal solution \(x^*\) and its corresponding dual problem with optimal solution \(y^*\).
+
+If we modify the i-th constraint:
+$$ (Ax)_i \geq b_i + \epsilon_i    $$
+the optimal solution becomes:
+$$ x^* \rightarrow x^*+\epsilon_i\delta x^*  $$
