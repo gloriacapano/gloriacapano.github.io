@@ -1,0 +1,11 @@
+#banner{
+  background-image: url(https://picsum.photos/id/1002/500/2000) ;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  padding: 80px;
+}
+
+#banner h3{
+  font-size: 20px;
+}
