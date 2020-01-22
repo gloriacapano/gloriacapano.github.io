@@ -6,6 +6,20 @@
   padding: 80px;
 }
 
+#banner h1 {
+    font-size: 52px;
+    background: -webkit-linear-gradient(180deg, #fff, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#banner h2 {
+  font-size: 32px;
+  background: -webkit-linear-gradient(180deg, #fff, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #banner h3{
   font-size: 20px;
 }
