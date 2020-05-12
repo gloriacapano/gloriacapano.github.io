@@ -2,6 +2,16 @@ body{
     background-color: rgb(97, 97, 143);
 }
 
+.no-selection{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+outline: 0;
+}
+
 .gloria{
     font-family: 'Niconne', cursive;
     font-weight: 400;
