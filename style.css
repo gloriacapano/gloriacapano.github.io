@@ -31,11 +31,18 @@
   transform: translate(-50%, -50%);
 }
 
+#vogel {
+  position: absolute;
+  left: 50%;
+  top: 480px;
+  transform: translate(-50%, -50%);
+}
+
 
 #stories {
   position: absolute;
   left: 50%;
-  top: 480px;
+  top: 530px;
   transform: translate(-50%, -50%);
 
 }
@@ -44,6 +51,6 @@
 #coffee{
    position:absolute;
    left: 50%;
-   top: 530px;
+   top: 580px;
    transform: translate(-50%, -50%);
 }
