@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Vogel Spiral</title>
+    <style>
+          body {
+            overflow: hidden;
+            margin: 0px;scroll-snap-type: ;
+            padding: 0px;
+            background-color: rgb(220, 180, 180);
+            height: inherit;
+          }
+    </style>
+</head>
+<body>
+    <div class="gloria"><a href="https://gloriacapano.github.io/">Gloria Capano</a></div>
+    <canvas id='spiral' ></canvas>
 
+    <script>
+        canvas = document.getElementById('spiral');
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+        ctx = canvas.getContext('2d');
+
+        function Point(x, y) {
+            this.x = x;
+            this.y = y;
+            this.color = 'rgb(80, 80, 120)';
+            this.size = 2;
+          }
+        Point.prototype.draw = function() {
+            ctx.beginPath();
+            ctx.fillStyle = this.color;
+            ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+            ctx.fill();
+          }
+
+
+        var n = 0;
+        var c = 3;
+        var modulo = 1;
+        var modulo2 = 1;
+        function loop(){
+            var a = n*137.5;
+            var r = c* Math.sqrt(n);
+            var rad = a/360*2*Math.PI;
+            var x = r*Math.cos(rad) + window.innerWidth / 2;
+            var y = r*Math.sin(rad) + window.innerHeight / 2;
+            var point = new Point(x, y);
+            if (n % modulo == 0 || (checkbox.checked && n% modulo2 == 0)) point.draw();
+            n ++;
+        }
+        setInterval(loop, 2);
+
+        function restart(){
+          n = 0;
+          ctx.clearRect(0,0,canvas.width, canvas.height);
+        }
+
+        // title
+        let title = document.createElement('div');
+        title.style.bottom = "30px";
+        title.style.right = "30px";
+        title.style.font = "Georgia";
+        title.style.fontSize = "20px";
+        title.style.position = "absolute";
+        title.style.border =  '3px solid rgb(80, 80, 120)';
+        title.style.padding = '10px';
+        title.style.color = 'rgb(80, 80, 120)';
+
+             
+        let linkVogel = document.createElement('a');
+        linkVogel.href = "https://www.codeproject.com/Articles/1221341/The-Vogel-Spiral-Phenomenon";
+        linkVogel.innerHTML = "Vogel's Spiral";
+        linkVogel.style.textDecoration = "none";
+        linkVogel.style.color = 'rgb(80, 80, 120)';
+        document.body.appendChild(title);
+        title.appendChild(linkVogel);
+
+
+
+        // slider
+        let slider = document.createElement('input');
+        slider.type = 'range';
+        slider.min = 1;
+        slider.max = 55;
+        slider.style.position = "absolute";
+        slider.style.right = "30px";
+        slider.style.top = "20px";
+        slider.value = 1;
+        document.body.appendChild(slider);
+
+
+        let slider2 = document.createElement('input');
+        slider2.type = 'range';
+        slider2.min = 1;
+        slider2.max = 55;
+        slider2.style.position = "absolute";
+        slider2.style.right = "30px";
+        slider2.style.top = "130px";
+        slider2.value = 1;
+        slider2.style.display = 'none';
+        document.body.appendChild(slider2);
+
+        let sliderView = document.createElement('div');
+        sliderView.style.position = "absolute";
+        sliderView.style.top = "50px";
+        sliderView.style.right = "30px";
+        sliderView.style.font = "Georgia";
+        sliderView.style.fontSize = "15px";
+        sliderView.style.color = 'rgb(80, 80, 120)';
+      
+
+        let slider2View = document.createElement('div');
+        slider2View.style.position = "absolute";
+        slider2View.style.top = "160px";
+        slider2View.style.right = "30px";
+        slider2View.style.font = "Georgia";
+        slider2View.style.fontSize = "15px";
+        slider2View.style.display = "none";
+        slider2View.style.color = 'rgb(80, 80, 120)';
+        
+        document.body.appendChild(sliderView);
+
+        document.body.appendChild(slider2View);
+      
+        slider.oninput = function() {
+          sliderView.innerHTML = "Show every multiple of " + slider.value;
+          modulo = slider.value;
+          restart();
+        };
+
+        slider.oninput();
+
+
+        slider2.oninput = function() {
+          slider2View.innerHTML = "Also show every multiple of " + slider2.value;
+          modulo2 = slider2.value;
+          restart();
+        };
+
+        slider2.oninput();
+
+        // checkBox
+        let checkbox = document.createElement('input');
+        let checkboxText = document.createElement('div');
+        checkbox.setAttribute("type", "checkbox");
+        checkbox.style.position = 'absolute';
+        checkbox.style.top = '101px';
+        checkbox.style.right = '30px';
+        checkboxText.style.position = 'absolute';
+        checkboxText.style.top = "100px";
+        checkboxText.style.right = '60px';
+        checkboxText.style.font = "Georgia";
+        checkboxText.style.fontSize = "15px";
+        checkboxText.style.color = 'rgb(80, 80, 120)';
+        checkboxText.innerHTML = "Do you want more complexity?"
+
+        document.body.appendChild(checkbox);
+        document.body.appendChild(checkboxText);
+
+
+        checkbox.onclick = function(){
+          if (checkbox.checked == true){ 
+            slider2.style.display = 'block';
+            slider2View.style.display = "block";
+            } else {
+            slider2.style.display = 'none';
+            slider2View.style.display = "none";
+          }
+          restart();
+        }
+        checkbox.onclick();
+
+        // change window size
+        window.addEventListener("resize", restart);
+
+    </script>
+</body>
+</html>
