@@ -7,9 +7,11 @@
     position: absolute;
     top: 10px;
     left: 20px;
+    visibility: hidden;
     
 }
 .gloria a{
     text-decoration: none;
     color: black;
+    visibility: hidden;
 }
