@@ -1,0 +1,169 @@
+<html>
+<head>
+    <link rel='stylesheet' href='../style/style_pages.css'/>
+    <link rel='stylesheet' href='../style/carousel.css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <title> The curious explorer </title>
+</head>
+
+<body>
+    
+    <!-- Navigation bar -->
+    <nav class="nav-main">
+        <!-- Content Navigation -->
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+        <div id="thispage"><span> <b>⇦</b> The Carousel</span></div>
+        <ul>
+            <li><a href="../index.html">The curious explorer</a></li>
+            <!-- <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li> -->
+        </ul>
+    </nav>
+
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>The Carousel</span></li>
+            <li><a href="../research">Research</a></li>
+            <li><a href="../eclairs">Les éclairs</a></li>
+            <li><a href="../about">About</a></li>
+            <li><a href="../contact">Contact</a></li>
+        </ul>
+    </aside> 
+
+        
+    <div id="container">
+        <div class='row'>
+        
+<!-- Intro -->
+            <div id="intro" >
+                <p>During the Covid-19 lockdown, I have started to learn how to create interactive websites and web apps using Javascript and Python Flask. 
+                   The Python Pytorch library has been also used to create, train, and employ Neural Networks.</p>
+                <p>Here some of my creations.</p>
+
+
+            </div>
+        </div>
+
+<!-- Fibonacci -->
+		<div class='row'>
+            <div class="column">
+                <a href="Fibonacci/index.html"><img src="img/rabbit.svg" alt="rabbit"></a>
+                      
+            </div>
+            <div class="column">
+                <div class='description'>
+                <a href="Fibonacci/index.html"><h1>Cute rabbits doing some Fibonacci</h1></a>
+                <p>Rabbits love Fibonacci and when it is spring time they pop up from the grass looking for a fresh meal. 
+                At the beginning, only one single rabbit could be spot, then a second one, and very soon, in a few generations, hundrends and hundrends of cute rabbits
+                happily jump in the garden.</p>
+                </div>
+            </div>
+        </div>
+    
+
+
+<!-- Vogel -->
+<div class='row'>
+    <div class="column">
+        <a href="VogelSpiral/index.html"><img src="img/flower.svg" alt="flower"></a>
+              
+    </div>
+    <div class="column">
+        <div class='description'>
+        <a href="VogelSpiral/index.html"><h1>Fibonacci loves also spirals</h1></a>
+        <p>Nature hides Fibonacci numbers a bit everywhere. 
+            Flowers, for example, often show spirals whose patterns are connected to the Fibonacci sequence. 
+            These spirals are called Vogel Spirals. Here you can play with a Vogel Spiral and discover its hidden structures.</p>
+        <p> Have you noticed that images in these page follow the Golden Ratio, another quantity that is related to the Fibonacci sequence?</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Coffee -->
+<div class='row'>
+    <div class="column">
+        <a href="https://real-italian-coffee.herokuapp.com/"><img src="img/coffee.svg" alt="coffee"></a>
+              
+    </div>
+    <div class="column">
+        <div class='description'>
+        <a href="https://real-italian-coffee.herokuapp.com/"><h1>This is not a Real Italian Coffee</h1></a>
+        <p>I do love coffee. My favourite is Italian-style coffee. More specifically, <i>Macchiato</i> and <i>Marocchino</i> are on top of my list.
+            Here the question: how many Italian-style coffee exist? I think this is an ill posed question. 
+            We should specify, how many <b>Real Italian-style coffee</b> exist in Italy and 
+            how many  <b>Not Real Italian-style coffee</b> exist outside Italy? 
+            Every year, outside Italy, new Not Real Italian-style coffee are created and named with Not Real Italian names.  
+            Here, I want to help all these coffee creators to find the best Not Real Italian name for their Not Real Italian Coffee. Enjoy!
+        </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Stories -->
+<div class='row'>
+    <div class="column">
+        <a href="https://nibbio.pythonanywhere.com/"><img src="img/stories.svg" alt="stories"></a>
+              
+    </div>
+    <div class="column">
+        <div class='description'>
+        <a href="https://nibbio.pythonanywhere.com/"><h1>Le Cadavre Exquis</h1></a>
+        <p>
+        In an old house at rue du Château 54, in Paris, the screenwriter and actor Marcel Duhamel, 
+        the poet Jacques Prévert et the painter Yves Tanguy, in 1918 invented a literary game who will have a lot a success among surrealists. 
+        The rules, as reported by the <i>Dictionnaire abrégé du surréalisme</i>, are very simple: people add a sentence 
+        or a drawing to a piece of paper whose previous additions are concealed.</p>
+        <p>In this personal reintrepretation, people can create in a similar fashion collaborative stories. 
+            Stories can be unfold from the beginning to end or from the end to the beginning.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Close container -->
+    </div>
+
+
+
+    <!-- <div id='fibonacci' class='entry'>
+        <div class="container">
+            <img src="img/rabbit.svg" alt="rabbit">
+            <div class="description">
+                <a href="Fibonacci/index.html"><h1>Cute rabbits doing some Fibonacci</h1></a>
+                <p>Rabbits love Fibonacci and when it is spring time they pop up from the grass looking for a fresh meal. 
+                    At the beginning, only one single rabbit could be spot, then a second one, and very soon, in a few generations, hundrends and hundrends of cute rabbits
+                    happily jump in the garden. </p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div id='vogel' >
+        <button type="button" class="btn btn-light">
+            <a href="VogelSpiral/index.html">Fibonacci loves also spirals!</a>
+        </button>
+    </div>
+
+
+    <div id='stories' >
+        <button type="button" class="btn btn-light">
+            <a href="https://nibbio.pythonanywhere.com/">Cadavre Exquis</a>
+        </button>
+    </div>
+
+
+        <div id='coffee' >
+        <button type="button" class="btn btn-light">
+            <a href="https://real-italian-coffee.herokuapp.com/">This is not a Real Italian Coffee</a>
+        </button>
+    </div> -->
+
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src='../js/main.js'></script>
+</html>

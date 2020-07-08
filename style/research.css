@@ -1,0 +1,23 @@
+.btn-toggle-nav{
+    background-image: url("img/mongolfiera_azzurro_scuro.svg");
+}
+
+
+
+#container{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #0d98bafe;
+    margin-top: 200px;
+  }
+
+
+/* 
+violet: #7f2aff00
+green #37c871fe 
+azzurro scuro: #0d98bafe
+fucsia: #ff00ccfe
+*/

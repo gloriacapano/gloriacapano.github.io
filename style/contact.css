@@ -1,0 +1,34 @@
+.btn-toggle-nav{
+    background-image: url("img/mongolfiera_azzurra.svg");
+}
+
+#listContact{
+    padding: 150 50;
+    /* background-color: black; */
+    list-style-type: none;
+    font-size: 14px;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    /* position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0; */
+}
+
+#listContact p{
+    margin-bottom: 30;
+}
+#listContact ul li{
+    padding: 10 0;
+    list-style-type: none;    
+    color: black; 
+}
+
+#listContact ul li a{
+    color: black; 
+}
+
+#listContact ul li a:hover{
+    color: #55cad9fe; 
+}
