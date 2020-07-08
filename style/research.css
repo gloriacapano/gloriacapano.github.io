@@ -3,18 +3,100 @@
 }
 
 
+/* Main container and intro */ 
+
 
 #container{
-    width: 50%;
+    width: 80%;
     text-align: center;
     margin: auto;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
-    color: #0d98bafe;
-    margin-top: 200px;
+    margin-top: 130px;
+    margin-bottom: 150px;
   }
 
 
+#intro{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* Two image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 5px 5px;
+    text-align: center;
+  }
+  
+  .row{
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+/* Publications */
+
+#list-publications {
+    display:none;
+}
+
+
+.hidden-title{
+    display: none;
+}
+
+#publication{
+    margin-top: 100px;
+}
+
+#publication a{ 
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#publication a:hover{ 
+    color: #0d98bafe;
+    text-decoration: none;
+}
+
+#publication ul{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    text-justify: inter-word;
+    list-style: none;
+}
+
+#list-publications ul li{
+    list-style: none;
+    padding: 15 0;
+}
+
+#list-publications ul li p{
+    line-height: normal;
+}
+
+.title{font-weight: 600;}
+
+.author{font-size: 12px;
+font-style: italic;}
+
+.journal{}
+
+.year{font-weight: 300;}
 /* 
 violet: #7f2aff00
 green #37c871fe 
