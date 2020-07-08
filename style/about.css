@@ -4,15 +4,29 @@
 
 
 #container{
-    width: 50%;
+    width: 45%;
     text-align: center;
     margin: auto;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
-    color: #ff00ccfe;
-    margin-top: 200px;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-size: 14px;
+    /* color: #ff00ccfe; */
+    margin-top: 80px;
+    padding: 40px 40px;
+    margin-bottom: 50px;
   }
 
+
+img{
+  border-radius: 50%;
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+p{
+  text-align: justify;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
 /* 
 violet: #7f2aff00
 green #37c871fe 
