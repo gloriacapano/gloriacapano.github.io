@@ -34,8 +34,8 @@ let bottom=100;
 function Discovery(){
     hasBeenClicked = true;
     document.getElementById("discoverText").style.visibility = "hidden";
-    $("h2").slideUp({duration: 900});
-    $("h1").slideUp({duration: 600});
+    $("h2").slideUp({duration: 1600});
+    $("h1").slideUp({duration: 1000});
     setTimeout(function(){ 
         fadeOutEffect("banner");}, 1000);
     setTimeout(function(){
