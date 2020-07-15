@@ -1,0 +1,41 @@
+.btn-toggle-nav{
+    background-image: url("../../style/img/mongolfiera_verde.svg");
+}
+
+#container{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+.title{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #37c871fe; 
+}
+.text{
+    text-align: justify;
+    margin-top: 30px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.important{
+    color: #37c871fe;
+}
+
+/* .emphasis{
+    color: #37c871fe;
+} */
+
+.plot{text-align: center;
+margin-top: 5px;
+margin-bottom: 15px;
+mix-blend-mode: multiply;
+opacity: 1;}
+  
+  /* font-size: 24px;
+  color: #37c871fe; */
