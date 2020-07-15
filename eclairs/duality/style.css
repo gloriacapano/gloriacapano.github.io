@@ -2,13 +2,27 @@
     background-image: url("../../style/img/mongolfiera_verde.svg");
 }
 
+#thispage a{
+    text-decoration: none;
+    color: black;
+}
+
+#thispage a:hover{
+    color: #37c871fe
+}
+
+
 #container{
     width: 60%;
     text-align: center;
     margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #37c871fe; 
   }
+
 
 .title{
     font-family: 'Orbitron', sans-serif;
@@ -21,6 +35,19 @@
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.6;
+    color: black;
+}
+
+.text a{
+    color: #ED6491;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text a:hover{
+    color: #37c871fe;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .important{
