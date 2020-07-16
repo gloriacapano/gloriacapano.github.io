@@ -40,7 +40,45 @@
     <div id="container">
 
         <p>COMING SOON</p>
+        <div class="title">Duality for a linear problem</div>
+        <div class="text"> 
+            <p><b class='important'>Linear problems</b> are a special class of problems in which we want
+            to optimize a <b class='important'>linear objective function</b> subject to <b class=important>linear equality</b> and
+            <b>linear inequality constraints.</b>
+            For example, we want to minimize the following objective function, that we call the <b class=important>cost</b> 
+            (we will see why this name): 
+                        
+            $$\min c^Tx $$
+            
+            where \(c\) is the <b class="important">cost vector</b> and \(x\) are the unkwnown quantity. We call them the <b>decision variables</b> because 
+            we will take some decisions about them as a consequence of the optimization process.
+            
+            The minimization of the cost function is subject to the following constraints:
 
+            $$Ax \geq b$$
+            $$x \geq 0 $$
+
+            where \(A\) is the constraint matrix. This means that the value that the decision variables can have depends on some constraints A. In addition, 
+            we have added the constraint that the decision variables can not be negative. 
+            
+            To understand better what we have written, let's take a numerical example for a simple problem with only two decision variables, \(x_1\) and \(x_2\). 
+            The constraints inequalities are:
+
+            $$3x_1 + x_2 \geq 6$$
+            $$x_1 + 2x_2 \geq 4$$
+            $$x_1 + x_2 \geq 2$$
+
+            together with the constraints \(x_1 \geq 0\) and \(x_2 \geq 0\). We can graphically represent the constraints in the decision variables space. 
+            The inequalities determine the <b class='important'>forbidden region</b>, that portion of space if which no possible solutions can be found, 
+            and the <b class='important'>feasible region</b>, which contains an infinite number of possible solutions (if variables are continous).
+
+
+
+            We don't want to find a solution, but the optimal solution that minimizes the cost function \(c^Tx\).  
+            </p>
+
+
+        </div>
     
     </div>
  
