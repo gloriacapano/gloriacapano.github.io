@@ -5,13 +5,13 @@
 #  Monkey needs to collect enough sweetnuts and fattynuts   #
 #  to fed its family (10 monkeys tot) for a weekend.        #
 #  Each monkey needs for each day                           #
-#  - no more than 7mg of iron                               #
+#  - no more than 7mg of salt                               #
 #  - at least 3g of fat                                     #
 #  - at least 6g of sugar                                   #
 #  10 sweetnuts are collected in 3 hours                    #
 #  and they have 8mg of salt, 2g of fat and 20g of sugar    #
 #  10 fattynuts are collected in 1 hour                     #
-#  and they have 9mg of iron, 15g of fat and 3g of sugar    #
+#  and they have 9mg of salt, 15g of fat and 3g of sugar    #
 #                                                           #
 #  Optimization is done using the pulp library and          #
 #  the cbc algorithm: https://github.com/coin-or/Cbc        #
