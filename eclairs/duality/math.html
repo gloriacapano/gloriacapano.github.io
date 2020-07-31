@@ -39,18 +39,18 @@
     
     <div id="container">
 
-        <p>COMING SOON</p>
+        <!-- <p>COMING SOON</p> -->
         <div class="title">Duality for a linear problem</div>
         <div class="text"> 
             <p><b class='important'>Linear problems</b> are a special class of problems in which we want
-            to optimize a <b class='important'>linear objective function</b> subject to <b class=important>linear equality</b> and
+            to optimize a <b class='important'>linear objective function</b> subject to <b class="important">linear equality</b> and
             <b>linear inequality constraints.</b>
-            For example, we want to minimize the following objective function, that we call the <b class=important>cost</b> 
+            For example, we want to minimize the following objective function, that we call the <b class="important">cost</b> 
             (we will see why this name): 
                         
             $$\min c^Tx $$
             
-            where \(c\) is the <b class="important">cost vector</b> and \(x\) are the unkwnown quantity. We call them the <b>decision variables</b> because 
+            where \(c\) is the <b class="important">cost vector</b> and \(x\) are the unkwnown quantity. We call them the <b class="important">decision variables</b> because 
             we will take some decisions about them as a consequence of the optimization process.
             
             The minimization of the cost function is subject to the following constraints:
@@ -72,7 +72,9 @@
             The inequalities determine the <b class='important'>forbidden region</b>, that portion of space if which no possible solutions can be found, 
             and the <b class='important'>feasible region</b>, which contains an infinite number of possible solutions (if variables are continous).
 
-
+            <div class="plot">
+                <img src="img/region.jpg" alt="one constraint">
+            </div>
 
             We don't want to find a solution, but the optimal solution that minimizes the cost function \(c^Tx\).  
             </p>
