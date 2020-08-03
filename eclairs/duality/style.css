@@ -58,12 +58,35 @@
     color: #37c871fe;
 } */
 
+
+.image{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image img {text-align: center;
+    width: 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    mix-blend-mode: multiply;
+    opacity: 1;}
+
+.image figcaption{
+    text-align: center;
+    width: 70%;
+    font-style: italic;
+    margin: auto;
+    font-size: 12px;
+}
+
+
+
 .plot{text-align: center;
-margin-top: 5px;
-margin-bottom: 15px;
-mix-blend-mode: multiply;
-opacity: 1;}
-  
+    margin-top: 5px;
+    margin-bottom: 15px;
+    mix-blend-mode: multiply;
+    opacity: 1;}
+
 
 #extra{
     margin-top: 50px;
