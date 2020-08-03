@@ -66,8 +66,8 @@
 
 .image img {text-align: center;
     width: 70%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     mix-blend-mode: multiply;
     opacity: 1;}
 
